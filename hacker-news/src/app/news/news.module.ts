@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BestNewsListingComponent } from './best-news-listing/best-news-listing.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
 import { NewsRoutingModule } from './news-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { NewsRoutingModule } from './news-routing.module';
   ],
   imports: [
     CommonModule,
-    NewsRoutingModule
+    NewsRoutingModule,
+    SharedModule
   ]
 })
 export class NewsModule { }

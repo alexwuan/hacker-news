@@ -10,6 +10,9 @@ import { IwaCardComponent } from './iwa-card/iwa-card.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    IwaCardComponent
   ]
 })
 export class ComponentsModule { }
