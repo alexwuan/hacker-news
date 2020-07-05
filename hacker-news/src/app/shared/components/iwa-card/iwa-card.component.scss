@@ -6,11 +6,13 @@ $bg_light: white;
 
 :host {
     margin-bottom: 16px;
+    cursor: pointer;
 
     .card-container {
-        max-width: 200px;
+        width: 200px;
         height: $card_height;
         border: 1px solid white;
+        border-radius: 5px;
         display: flex;
         flex-direction: column;
 
@@ -20,6 +22,7 @@ $bg_light: white;
             img {
                 height: 100%;
                 width: 100%;
+                border-radius: 5px 5px 0px 0px;
             }
         }
 
@@ -34,6 +37,7 @@ $bg_light: white;
                 text-align: center;
                 margin-bottom: 4px;
             }
+
             .subtitle {
                 font-size: 14px;
                 text-align: center;
@@ -44,9 +48,20 @@ $bg_light: white;
         .description {
             background-color: $bg_light;
             padding: 10px;
-            font-size: 14px;
+            font-size: 12px;
             text-align: center;
             color: gray;
+            display: flex;
+            justify-content: space-between;
+
+            >div {
+                display: flex;
+                align-items: flex-end;
+
+                span {
+                    margin-left: 4px;
+                }
+            }
         }
     }
 }

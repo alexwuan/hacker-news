@@ -6,5 +6,20 @@
         <div class="title">{{ article.title }}</div>
         <div class="subtitle">{{ article.subtitle }}</div>        
     </div>
-    <div class="description">{{ article.description }}</div>
+    <!-- <div class="description">{{ $any(article).description.point }}</div> -->
+    <div class="description">
+        <div class="point">
+            <mat-icon aria-hidden="false" aria-label="Point">sentiment_satisfied</mat-icon>
+            <span>{{ $any(article).description.point }}</span>
+        </div>        
+        <div class="comment">
+            <mat-icon aria-hidden="false" aria-label="No of comments">mode_comment</mat-icon>
+            <span>{{ $any(article).description.noOfComment }}</span>
+        </div>
+        <div class="date">
+            <mat-icon aria-hidden="false" aria-label="Action date">schedule
+            </mat-icon>
+            <span>{{ $any(article).description.actionDate }}</span>
+        </div>
+    </div>
 </div>

@@ -1,3 +1,3 @@
-<ng-container *ngFor="let article of newsListing | async">
-    <app-iwa-card [article]='article'></app-iwa-card>
+<ng-container *ngFor="let article of articles">
+    <app-iwa-card [article]='article' (click)="routeToDetail(article.url)"></app-iwa-card>
 </ng-container>
